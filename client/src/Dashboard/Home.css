@@ -1,0 +1,120 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('../assets/home-bg.webp') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.home-container {
+  text-align: center;
+  padding: 50px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.dashboard-heading {
+  font-size: 60px;
+  margin-bottom: 60px;
+  color: #fff;
+  text-align: center;
+}
+
+.dashboard-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.dashboard-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+  font-size: 22px;
+  text-align: left;
+  min-height: 250px;
+  opacity: 0;
+  transform: translateX(100px);
+  animation: fadeIn 1.5s forwards;
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.dashboard-box.even {
+  align-self: flex-start;
+  transform: translateX(-100px);
+}
+
+.dashboard-box.odd {
+  align-self: flex-end;
+}
+
+.dashboard-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  }
+
+.icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+  display: block;
+  color: #FFD700; /* Golden icon color */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.dashboard-box.even {
+  animation: fadeInLeft 1.5s forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    gap: 30px;
+  }
+
+  .dashboard-box {
+    font-size: 18px;
+    padding: 20px;
+    min-height: 200px;
+  }
+
+  .icon {
+    font-size: 40px;
+  }
+
+  .dashboard-box.even, .dashboard-box.odd {
+    align-self: center;
+  }
+}

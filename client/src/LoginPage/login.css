@@ -1,0 +1,118 @@
+.log-container {
+  position: relative;
+  top: 150px;
+    width: 350px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.15); /* Transparent background */
+    backdrop-filter: blur(10px); /* Slight blur for a frosted glass effect */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Form title */
+  .log-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Form labels */
+  .log-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .log-input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  /* Icons inside input fields */
+  .log-input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+  }
+  
+  /* Input fields */
+  .log-input {
+    width: 70%;
+    padding: 10px 10px 10px 40px; /* Adjust for icon space */
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input hover and focus effects */
+  .log-input:hover,
+  .log-input:focus {
+    border-color: #4CAF50; /* Green highlight */
+    background-color: rgba(255, 255, 255, 0.9);
+    outline: none;
+  }
+  
+  /* Buttons */
+  .log-button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .log-button:hover {
+    background-color: #45a049;
+  }
+  
+  .log-alt-button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .log-alt-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* General link styling */
+  .log-link {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .log-container:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    transition: transform 0.3s ease;
+  }
+  

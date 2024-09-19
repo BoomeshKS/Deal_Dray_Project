@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.list-container {
+    position: relative;
+    top: 110px;
+  font-family: 'Roboto', sans-serif;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-container h1 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.list-container input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1em;
+}
+
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list-table th,
+.list-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.action-buttons{
+  position: relative;
+  top: 33px;
+}
+
+.list-table th {
+  background-color: #f4f4f4;
+  color: #555;
+  border-bottom: 2px solid #ddd;
+}
+
+.list-table td {
+  border-bottom: 1px solid #ddd;
+}
+
+.list-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.list-table img {
+  border-radius: 50%;
+}
+
+.list-table button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+  }
+  
+  .list-table button:hover {
+    background-color: #0056b3;
+  }
+  
+  .list-table .edit-button {
+    background-color: #28a745;
+  }
+  
+  .list-table .edit-button:hover {
+    background-color: #218838;
+  }
+  
+  .list-table .delete-button {
+    background-color: #dc3545;
+  }
+  
+  .list-table .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .list-table .action-buttons {
+    display: flex;
+    gap: 5px;
+  }
+
+
+
+
+
+
+
+  /*########################################################*/
+
+  
+
+.edit-form-container {
+    position: relative;
+    top: 120px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+  }
+  
+  /* Title Styling */
+  .edit-form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* General form layout */
+  .edit-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Input field styling */
+  .edit-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .edit-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* File input field */
+  .edit-file-input {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Submit button styling */
+  .edit-button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .edit-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+  }
+  
+  .edit-button:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+  }
+  
+  /* Image preview styling */
+  .edit-image-preview {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .edit-image-preview img {
+    max-width: 100px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Icons container for save, delete, upload actions */
+  .edit-icons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Individual icon styling */
+  .edit-icon {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect for icons */
+  .edit-icon:hover {
+    transform: scale(1.2);
+    color: #007bff;
+  }
+  
+  .edit-icon:active {
+    transform: scale(1.1);
+    color: #0056b3;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .edit-form-container {
+      padding: 15px;
+    }
+  
+    .edit-input, .edit-file-input, .edit-button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .edit-icon {
+      font-size: 20px;
+    }
+  }
+  
